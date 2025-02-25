@@ -24,7 +24,7 @@ public class Main {
         }
 
         // Se delega la creación del Stack a la fábrica
-        Pila<Double> pila = FabricaDePilas.crearPila(opcionPila, tipoEstructura);
+        Stack<Double> pila = StackFactory.createStack(opcionPila, tipoEstructura);
 
         // (Resto del código para usar la Calculadora y leer el archivo)
         Calculadora calculadora = Calculadora.obtenerInstancia(pila);
@@ -33,8 +33,8 @@ public class Main {
             String expresion;
             while ((expresion = lector.readLine()) != null) {
                 try {
-                    String notacionPostfija = ConvertidorInfijoAPostfijo.convertir(expresion);
-                    double resultado = calculadora.evaluar(notacionPostfija);
+                    String notacionPostfija = InfixToPostfix.transformar(expresion);
+                    double resultado = calculadora.calcular(notacionPostfija);
                     System.out.println("Expresión: " + expresion
                                        + " -> Postfix: " + notacionPostfija
                                        + " = " + resultado);

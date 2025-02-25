@@ -42,4 +42,28 @@ public class ListaDoble<E> implements Lista<E> {
             this.anterior = anterior;
         }
     }
+
+    @Override
+    public void agregar(E item) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'agregar'");
+    }
+
+    @Override
+    public E removerUltimo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'removerUltimo'");
+    }
+
+    @Override
+    public E obtenerUltimo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerUltimo'");
+    }
+
+    @Override
+    public int tamano() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'tamano'");
+    }
 }

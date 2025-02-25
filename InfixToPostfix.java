@@ -51,4 +51,9 @@ public class InfixToPostfix {
             default: return -1;
         }
     }
+
+    public static String convertir(String expresion) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'convertir'");
+    }
 }
